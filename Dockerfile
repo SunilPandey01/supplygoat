@@ -3,7 +3,8 @@ ENV WORKDIR /usr/src/app/
 WORKDIR $WORKDIR
 COPY package*.json $WORKDIR
 RUN npm install --production --no-cache
-
+ENV access_key = "AKIAIOSFODNN7EXAMPLE"
+ENV secret_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 FROM node:12-alpine
 ENV USER node
 ENV WORKDIR /home/$USER/app
