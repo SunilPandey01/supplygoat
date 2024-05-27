@@ -24,8 +24,8 @@ jobs:
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::accountID:role/CodeGuruSecurityGitHubAccessRole
-          aws-region: region
+          role-to-assume: arn:aws:iam::730335295062:role/CodeGuruSecurityGitHubAccessRole
+          aws-region: us-east-1
           role-session-name: GitHubActionScript
 
       - name: CodeGuru Security
