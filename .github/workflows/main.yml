@@ -47,7 +47,7 @@ jobs:
           sarif_file: codeguru-security-results.sarif.json
 
 
-     - name: CodeGuru Security
+      - name: CodeGuru Security
         uses: aws-actions/codeguru-security@v1
         with:
           source_path: .
