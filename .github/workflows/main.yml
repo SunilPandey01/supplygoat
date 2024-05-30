@@ -34,10 +34,10 @@ jobs:
           source_path: .
           aws_region: us-east-1
        #   fail_on_severity: Critical
-      - name: Print findings
-        run: |
-          ls -l
-          cat codeguru-security-results.sarif.json
+#      - name: Print findings
+#        run: |
+#          ls -l
+#          cat codeguru-security-results.sarif.json
 
       # If you want content in security scanning, you’ll need to enable codescanning by going into github.
       # https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning-for-a-repository
